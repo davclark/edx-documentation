@@ -56,7 +56,13 @@ Alphabetical Event List
      - :ref:`enrollment` and :ref:`instructor_enrollment`
    * - ``edx.course.enrollment.deactivated`` 
      - :ref:`enrollment` and :ref:`instructor_enrollment`
+   * - ``edx.forum.comment.created``
+     - :ref:`forum_events`
+   * - ``edx.forum.response.created``
+     - :ref:`forum_events`
    * - ``edx.forum.searched``
+     - :ref:`forum_events`
+   * - ``edx.forum.thread.created``
      - :ref:`forum_events`
    * - ``get_anon_ids``
      - :ref:`Instructor_Event_Types`

@@ -150,7 +150,7 @@ Common Fields
 ********************
 
 This section describes the JSON fields that are common to the schema
-definitions of all events.
+definitions of all events. 
 
 =====================
 ``agent`` Field
@@ -1187,7 +1187,7 @@ within 500ms of each other.
      - Type
      - Details
    * - ``caseSensitive``
-     - boolean
+     - Boolean
      - 'true' if the case sensitive option is selected. 
        
        'false' if this option is not selected.
@@ -1196,7 +1196,7 @@ within 500ms of each other.
      - string
      - The name of the PDF file. 
    * - ``highlightAll``
-     - boolean
+     - Boolean
      - 'true' if the option to highlight all matches is selected. 
        
        'false' if this option is not selected.
@@ -1239,7 +1239,7 @@ clicks on the Find Next or Find Previous icons for an entered search string.
      - Type
      - Details
    * - ``caseSensitive``
-     - boolean
+     - Boolean
      - 'true' if the case sensitive option is selected. 
        
        'false' if this option is not selected.
@@ -1248,13 +1248,13 @@ clicks on the Find Next or Find Previous icons for an entered search string.
      - string
      - The name of the PDF file. 
    * - ``findprevious``
-     - boolean
+     - Boolean
      - 'true' if the user clicks the Find Previous icon. 
        
        'false' if the user clicks the Find Next icon.
 
    * - ``highlightAll``
-     - boolean
+     - Boolean
      - 'true' if the option to highlight all matches is selected. 
        
        'false' if this option is not selected.
@@ -1297,7 +1297,7 @@ selects or clears the **Highlight All** option for a search.
      - Type
      - Details
    * - ``caseSensitive``
-     - boolean
+     - Boolean
      - 'true' if the case sensitive option is selected. 
        
        'false' if this option is not selected.
@@ -1306,7 +1306,7 @@ selects or clears the **Highlight All** option for a search.
      - string
      - The name of the PDF file. 
    * - ``highlightAll``
-     - boolean
+     - Boolean
      - 'true' if the option to highlight all matches is selected. 
        
        'false' if this option is not selected.
@@ -1349,7 +1349,7 @@ user selects or clears the **Match Case** option for a search.
      - Type
      - Details
    * - ``caseSensitive``
-     - boolean
+     - Boolean
      - 'true' if the case sensitive option is selected. 
        
        'false' if this option is not selected.
@@ -1358,7 +1358,7 @@ user selects or clears the **Match Case** option for a search.
      - string
      - The name of the PDF file. 
    * - ``highlightAll``
-     - boolean
+     - Boolean
      - 'true' if the option to highlight all matches is selected.
        
        'false' if this option is not selected.
@@ -1877,6 +1877,112 @@ for a problem and it is graded successfully.
 Forum Events
 ==========================
 
+The server emits these events when a user interacts with course discussions.
+This section presents the forum events alphabetically. However, several of
+these events have hierarchical or sequential relationships.
+
+* When a user creates a new thread, such as a student asking a question, the
+  server emits an :ref:`forum_thread` event.
+
+* When a user responds to a thread, such as another student answering the
+  question, the server emits an :ref:`forum_response` event.
+
+* When a user adds a comment to a response, such as a staff member adding a
+  clarification to the student answer, the server emits an
+  :ref:`forum_comment` event.
+
+.. _forum_comment:
+
+``edx.forum.comment.created``
+*********************************
+
+Users create a comment about a response by entering text and then submitting
+the contributions. When these actions are complete, the server emits an
+``edx.forum.comment.created`` event.
+
+**Component**: Discussion
+
+**Event Source**: Server
+
+**History**: Added nn Feb 2015.
+
+``event`` **Member Fields**:
+
+The ``edx.forum.comment.created`` events include many of the same ``event``
+member fields that are described for :ref:`forum_thread` and
+:ref:`forum_response` events. The following member fields serve the same
+purpose for comments as they do for threads or responses.
+
+* ``body``
+* ``commentable_id``
+* ``discussion``
+* ``id``
+* ``options``
+* ``truncated``
+* ``url``
+* ``user_course_role``
+* ``user_forums_role``
+
+.. list-table::
+   :widths: 15 15 60
+   :header-rows: 1
+
+   * - Field
+     - Type
+     - Details
+   * - ``response``
+     - dictionary
+     - Contains a member ``id`` field with the unique identifier of the
+       response that the user added this comment to.
+
+.. _forum_response:
+
+``edx.forum.response.created``
+*********************************
+
+Users create a reply to a thread or post by clicking **Add a Response** and
+then submitting their contributions. When these actions are complete, the
+server emits an ``edx.forum.response.created`` event.
+
+**Component**: Discussion
+
+**Event Source**: Server
+
+**History**: Added nn Feb 2015. 
+
+``event`` **Member Fields**:
+
+The ``edx.forum.response.created`` events include many of the same ``event``
+member fields that are described for :ref:`forum_thread` events. The following
+member fields serve the same purpose for responses as they do for threads.
+
+* ``body``
+* ``commentable_id``
+* ``id``
+* ``options``
+* ``truncated``
+* ``url``
+* ``user_course_role``
+* ``user_forums_role``
+
+The following additional ``event`` member field applies specifically to
+``edx.forum.response.created`` events.
+
+.. list-table::
+   :widths: 15 15 60
+   :header-rows: 1
+
+   * - Field
+     - Type
+     - Details
+   * - ``discussion``
+     - dictionary
+     - Contains a member ``id`` field with the unique identifier of the thread
+       that the user responded to.
+
+       Also present for ``edx.forum.comment.created`` events.
+
+
 ``edx.forum.searched``
 *********************************
 
@@ -1934,6 +2040,136 @@ Jun 2014. The ``group_id`` field was added 7 October 2014.
    * - ``total_results``
      - integer
      - The total number of results matching the query.
+
+.. _forum_thread:
+
+``edx.forum.thread.created``
+*********************************
+
+Users create a new top-level thread by clicking **New Post** and then
+submitting their contributions. When these actions are complete, the server
+emits an ``edx.forum.thread.created`` event.
+
+**Component**: Discussion
+
+**Event Source**: Server
+
+**History**: Added nn Feb 2015.
+
+``event`` **Member Fields**:
+
+.. list-table::
+   :widths: 15 15 60
+   :header-rows: 1
+
+   * - Field
+     - Type
+     - Details
+   * - ``anonymous``
+     - Boolean
+     - Applies only to courses that allow discussion posts that are anonymous
+       to all other users.
+       
+       'true' only if the user selected the **Post Anonymously** check box.
+
+   * - ``anonymous_to_peers``
+     - Boolean
+     - Applies only to courses that allow discussion posts that are anonymous
+       to other students. The username of the thread creator is visible only
+       to users who have discussion management privileges.
+       
+       'true' only if the user selected the **Post Anonymously** check box.
+
+   * - ``body``
+     - string
+     - The text supplied for the new post.
+       
+       Also present for ``edx.forum.response.created`` and
+       ``edx.forum.comment.created`` events.
+
+   * - ``category_id``
+     - string
+     - Identifier for the specific discussion component or top-level,
+       course-wide discussion.
+
+       Also present for ``edx.forum.response.created`` and
+       ``edx.forum.comment.created`` events.
+       
+   * - ``category_name``
+     - string
+     - The display name for the specific discussion component or top-level,
+       course-wide discussion.
+
+       Also present for ``edx.forum.response.created`` and
+       ``edx.forum.comment.created`` events.
+
+   * - ``commentable_id``
+     - string
+     - Identifier for the specific discussion component or top-level,
+       course-wide discussion. Duplicates the ``category_id``.
+
+       Also present for ``edx.forum.response.created`` and
+       ``edx.forum.comment.created`` events.
+       
+   * - ``group_id``
+     - string
+     - The numeric ID of the cohort to which the contribution is restricted,
+       or ``null`` if the contribution is not restricted to a specific cohort.
+   * - ``id``
+     - string
+     - A unique identifier for this forum contribution.
+
+       Also present for ``edx.forum.response.created`` and
+       ``edx.forum.comment.created`` events.
+       
+   * - ``options``
+     - dictionary
+     - The ``followed`` Boolean identifies whether the user elected to track
+       the responses that others make to this post.
+
+       Also present for ``edx.forum.response.created`` and
+       ``edx.forum.comment.created`` events.
+       
+   * - ``thread_type``
+     - string
+     - The person who creates the thread specifies either 'discussion' or
+       'question' to characterize the purpose of the post.
+   * - ``title``
+     - string
+     - The brief descriptive text supplied to identify the post.
+   * - ``truncated``
+     - Boolean
+     - 'true' only if the post was longer than the maximum allowed number of
+       characters.
+
+       Also present for ``edx.forum.response.created`` and
+       ``edx.forum.comment.created`` events.
+       
+   * - ``url``
+     - string
+     - The escaped URL of the page the user was visiting when this event was
+       emitted.
+
+       Also present for ``edx.forum.response.created`` and
+       ``edx.forum.comment.created`` events.
+       
+   * - ``user_course_role``
+     - string
+     - Identifies the course-level 'Instructor' or 'Staff' privilege assigned
+       to the user. No value is reported for students.
+
+       Also present for ``edx.forum.response.created`` and
+       ``edx.forum.comment.created`` events.
+       
+   * - ``user_forums_role``
+     - string
+     - Identifies a user who does not have discussion management privileges as
+       a 'Student'. Identifies users who have discussion management privileges
+       as a course 'Community TA', 'Moderator', or 'Administrator'.
+
+       Also present for ``edx.forum.response.created`` and
+       ``edx.forum.comment.created`` events.
+       
 
 .. _ora2:
 
