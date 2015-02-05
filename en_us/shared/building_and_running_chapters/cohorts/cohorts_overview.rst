@@ -26,7 +26,8 @@ cohorts<Options for Assigning Students to Cohorts>`.
    * Each student can be in one and only one cohort. 
 
    To provide students with a consistent experience throughout the course run,
-   do not change a student's cohort assignment after the course begins.
+   do not change cohort configuration or a student's cohort assignment after
+   your course begins.
 
 For more information about using cohorts in courses, see:
 
@@ -46,10 +47,31 @@ For information about discussions in general, see :ref:`Discussions`.
 Options for Assigning Students to Cohorts
 *****************************************
 
-You can configure the cohort feature so that students are assigned to cohorts
-automatically or manually. You can also use a combination of both assignment
-methods. Typically, your purpose in including the cohort feature in your course
-determines which assignment option you will use for your course.
+Students can be assigned to cohorts either automatically or manually, depending
+on the types of cohort you create in your course. Manual cohorts do not have
+students assigned to them unless you manually add students. Students who do not
+belong to any cohort by the time they access discussion topics or the Discussion
+tab in the course are randomly assigned to automated cohorts.
+
+.. note:: You can add students manually to any cohort, whether it was created as
+   an automated cohort or a manual cohort.
+
+You can use a hybrid assignment method by creating a combination of automated
+and manual cohorts. Typically, your purpose in including the cohort feature in
+your course determines which assignment option you use for your course.
+
+.. note:: Although you can change the assignment method of a cohort at any time
+after you create it, you should have a cohort assignment strategy in mind as you
+design your course, and only make changes to cohorts while the course is running
+if absolutely necessary. Be aware of the implications of changing cohort
+configuration while your course is running. For more information, see
+:ref:`Options for Assigning Students to Cohorts` and :ref:`Altering Cohort
+Configuration`. In general, to provide students with a consistent experience
+throughout the course run, do not change cohort configuration or a student's
+cohort assignment after your course begins.
+
+For more information about strategies for assigning students to cohorts, see the
+following topics.
 
 * :ref:`All Automated Assignment`
 
@@ -58,6 +80,7 @@ determines which assignment option you will use for your course.
 * :ref:`Hybrid Assignment`
 
 * :ref:`Default Cohort Group`
+  
 
 
 .. _All Automated Assignment:
@@ -66,21 +89,21 @@ determines which assignment option you will use for your course.
 Automated Assignment: Making MOOC Discussions Manageable
 ========================================================
 
-In very large courses, the number of posts made to course discussion topics can
-make for a daunting amount of daily reading. In such courses, dividing the
-enrollees into separate cohorts makes the volume of posts, responses, and
-comments by the members of each one more manageable, and is more likely to
-foster community feeling.
+In very large courses, the number of posts that are made to course discussion
+topics can make for a daunting amount of daily reading. In such courses,
+dividing the enrollees into separate cohorts makes the volume of posts,
+responses, and comments by the members of each cohort more manageable, and is
+more likely to foster community feeling.
 
-To implement this assignment strategy, you enable the cohort feature and create
-a set of "auto" (automated) cohorts. The first time a student views the course
-**Discussion** page or any of the content-specific discussion topics, he or she
-is randomly assigned to one of the auto cohorts. Together, all of the students
-who are assigned to the same group form a cohort.
+If you use the automated assignment strategy, you create several "auto"
+(automated) cohorts. Learners are automatically and randomly assigned to one of
+the auto cohorts when they first view any course content, including the course
+**Discussion** page or content-specific discussion topics. In this way, each
+learner in your course is assigned to a cohort; no learner is unassigned.
 
-These guidelines, which are based on the experiences of MOOC teams that have
-used the cohort feature in this way, are suggested to help you determine how
-many automated cohorts to define for your course.
+The following guidelines are based on the experiences of MOOC teams that have
+used cohorts in this way. They are suggested to help you determine how many
+automated cohorts to define for your course.
 
 * Each cohort should be large enough to inspire lively participation and
   diverse points of view, but small enough to allow a sense of community to
@@ -96,11 +119,11 @@ many automated cohorts to define for your course.
 
 For example, two days before it starts, a course has an enrollment of 80,000
 students. To create small communities within the discussions, the course team
-enables the cohort feature and creates eight automated cohorts. As they visit
-the **Discussion** page and view the discussion components in the course
-content, students are assigned to one of the cohorts. In divided discussion
-topics, students read and respond to contributions made by other members of the
-same cohort only.
+enables cohorts and then creates eight automated cohorts. As learners visit the
+**Discussion** page and view the discussion components in the course content,
+they are assigned to one of the eight cohorts. In divided discussion topics,
+students read and respond only to contributions made by other members of the
+same cohort.
 
 For more information, see :ref:`Implementing the Automated Assignment
 Strategy`.
@@ -121,9 +144,9 @@ discuss applications for what they are learning and explore resources and ideas
 that are of particular interest.
 
 To implement this assignment strategy, you identify the "real-world" cohorts
-that your students belong to already. You enable the cohort feature and create a
-"manual" cohort to represent each of those cohorts. You then assign each student
-to one of the manual cohorts. Every student who enrolls, including those who
+that your students already belong to. You enable cohorts and then create
+"manual" cohorts to represent each of the real-world cohorts. You then manually
+assign each student to a cohort. Every student who enrolls, including those who
 enroll after the course starts, must be assigned to a cohort.
 
 
@@ -141,34 +164,34 @@ For more information, see :ref:`Implementing the Manual Assignment Strategy`.
 Hybrid Assignment: Accommodating Small Groups Within a Course
 =============================================================
 
-For some courses, the manual assignment strategy isn't feasible to execute, and
-the automated assignment strategy doesn't accommodate the existing cohorts that
-exist in the student body. The enrollment may be too large to complete manual
-assignments effectively, or only some of the students may have strong defining
+For some courses, the manual assignment strategy is not feasible to execute, and
+the automated assignment strategy does not accommodate existing cohorts in the
+student body. The enrollment might be too large to complete manual assignments
+effectively, or only some of the students might have strong defining
 characteristics among an otherwise diverse student body. For these courses, you
-can use a hybrid of the two strategies to implement the cohort feature.
+can use a hybrid of the two strategies to implement cohorts.
 
 An example is a course that enrolls members of an alumni association. The alumni
-want an opportunity for private interactions, so manual assignment of those
+want an opportunity to have private interactions, so manual assignment of those
 students to a cohort makes sense. For other students in the class, manual
-assignment isn't needed: you create one or more automated cohorts for
-those students.
+assignment is not needed: you can create one or more automated cohorts for those
+students.
 
 Before you implement the hybrid strategy, you identify the characteristics that
 define existing cohorts in the student body. You also decide whether you want
-the rest of the students in the course to be divided into their own, similarly-
+the remaining students in the course to be divided into their own, similarly-
 sized cohorts, or if you want them all to be in just one other cohort.
 
-After you enable the cohort feature, you create a manual cohort for each
-cohort that you identified. You manually assign students who belong to those
-cohorts to the corresponding cohorts. You also set up automated cohorts for
-the other students in the course, or rely on the default cohort. The
-students who are not assigned to a manual cohort are automatically
-assigned to one of the automated cohorts, or to the default cohort
-if you choose to use it, when they view the **Discussion** page or a discussion
-topic in the course content. (For best results when you use this strategy, you
-complete all manual assignments before the course starts and students begin
-viewing discussion topics.)
+After you enable cohorts, you create a manual cohort for each cohort that you
+identified. You manually assign students who belong to those cohorts to the
+corresponding cohorts. You also set up automated cohorts for the other students
+in the course, or rely on the default automated cohort. Any students who are not
+assigned to a manual cohort are automatically assigned to one of the automated
+cohorts, or to the default cohort if you choose to use it, when they view the
+**Discussion** page or a discussion topic in the course content. (For best
+results when you use this strategy, you should complete all manual cohort
+assignments before the course starts and students begin viewing discussion
+topics.)
 
 For more information, see :ref:`Implementing the Automated Assignment
 Strategy` and :ref:`Implementing the Manual Assignment Strategy`.
@@ -181,7 +204,7 @@ Ensuring That All Students Are Assigned: The Default Cohort
 ===========================================================
 
 In a course that has the cohort feature enabled, all students must be assigned
-to a cohort. To assure that all students are assigned, the system automatically
+to a cohort. To ensure that all students are assigned, the system automatically
 creates a default cohort and assigns students to it if necessary. Creation of
 the default cohort only occurs if you do not define any automated cohorts for
 your course. Any student who is not assigned to a manual cohort is assigned to
