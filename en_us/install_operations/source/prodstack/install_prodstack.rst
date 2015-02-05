@@ -6,7 +6,8 @@
 Installing the edX Production Stack
 ####################################
 
-This chapter is intended for those who are installing and running the edX Production Stack.
+This chapter is intended for those who are installing and running the edX
+Production Stack.
 
 See the following sections:
 
@@ -21,8 +22,8 @@ See the following sections:
 Overview
 **********
 
-The edX Production Stack, known as **Fullstack**, is a Vagrant instance designed
-for deploying all edX services on a single server.
+The edX Production Stack, known as **Fullstack**, is a Vagrant instance
+designed for deploying all edX services on a single server.
 
 See the `Vagrant documentation`_ for more information.
 
@@ -53,8 +54,8 @@ To use Fullstack, you should:
   `Introduction to the Mac OS X Command Line`_. If you are using a Windows
   computer, see `Windows Command Line Reference`_.
 
-* Understand Vagrant commands. See the `Vagrant Getting Started`_ guide for more
-  information.
+* Understand Vagrant commands. See the `Vagrant Getting Started`_ guide for
+  more information.
 
 
 **************************
@@ -78,7 +79,8 @@ Install the edX Production Stack
 To install Fullstack directly from the command line, follow the instructions
 below.
 
-Before beginning the installation, ensure that you have your local computer's administrator's password.
+Before beginning the installation, ensure that you have your local computer's
+administrator's password.
 
 #. Ensure the ``nfsd`` client is running.
 
@@ -93,7 +95,8 @@ Before beginning the installation, ensure that you have your local computer's ad
    
    .. code-block:: bash
 
-     curl -L https://raw.githubusercontent.com/edx/configuration/master/vagrant/release/fullstack/Vagrantfile > Vagrantfile
+     curl -L https://raw.githubusercontent.com/edx/configuration/master/vagrant
+     /release/fullstack/Vagrantfile > Vagrantfile
 
 #. Install the Vagrant hostsupdater plugin.
    
@@ -107,9 +110,10 @@ Before beginning the installation, ensure that you have your local computer's ad
 
      vagrant up
 
-   The first time you create the Fullstack virtual machine, Vagrant downloads the
-   base box, which is about 4GB. If you destroy and recreate the virtual
-   machine, Vagrant re-uses the box it downloaded. See `Vagrant's documentation on boxes`_ for more information.
+   The first time you create the Fullstack virtual machine, Vagrant downloads
+   the base box, which is about 4GB. If you destroy and recreate the virtual
+   machine, Vagrant re-uses the box it downloaded. See `Vagrant's documentation
+   on boxes`_ for more information.
 
 #. When prompted, enter your local computer's administrator's password.
    
@@ -120,6 +124,7 @@ Before beginning the installation, ensure that you have your local computer's ad
 Browser Login To Your New edX Production Stack
 **********************************************
 
-#. Go to preview.localhost in your browser, which is an alias entry for 192.168.33.10 that was created in your /etc/hosts file.
+#. Go to preview.localhost in your browser, which is an alias entry for
+   192.168.33.10 that was created in your /etc/hosts file.
 
    When prompted, enter **edx** for both username and password.

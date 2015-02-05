@@ -7,16 +7,26 @@
 Installing, Configuring, and Running the edX Platform
 ######################################################
 
+*Installing, Configuring, and Running the edX Platform* provides instructions
+for using your own instance of the edX Platform and associated applications.
+
+This document applies to the most recent version of the edX Platform; that is, it applies to the *master* branch of the edX Platform.
+
+This document also contains instructions for named releases of Open edX. The most recent named release of Open edX is :ref:`Birch`.
+
 .. toctree::
    :numbered:
    :maxdepth: 2
 
    read_me
    change_log
+   preface
    browsers
+   birch
    install_options
    devstack/install_devstack
    devstack/run_devstack
    prodstack/install_prodstack
+   configuration/index
    analytics/install_analytics
    mobile

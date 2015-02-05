@@ -47,8 +47,8 @@ Connect to the Devstack Virtual Machine
 Set Up Ability to Preview Units (Mac/Linux Only)
 ****************************************************
 
-If you are installing Devstack on a Linux or Macintosh computer, in order to use
-the preview feature in edX Studio, you must add the following line to the
+If you are installing Devstack on a Linux or Macintosh computer, in order to
+use the preview feature in edX Studio, you must add the following line to the
 ``etc/hosts`` file:
 
   .. code-block:: bash
@@ -64,10 +64,10 @@ You can customize the location of the edX source code that gets cloned when you
 provision Devstack. You may want to do this to have Devstack work with source
 code that already exists on your computer.
 
-By default, the source code location is the directory in which you run ``vagrant
-up``.  To change this location, set the ``VAGRANT_MOUNT_BASE`` environment
-variable to set the base directory for the edx-platform and cs_comments_service
-source code directories.
+By default, the source code location is the directory in which you run
+``vagrant up``.  To change this location, set the ``VAGRANT_MOUNT_BASE``
+environment variable to set the base directory for the edx-platform and
+cs_comments_service source code directories.
 
 .. WHERE IS VARIABLE?
 
@@ -88,13 +88,14 @@ To run the LMS on Devstack:
    
    .. code-block:: bash
 
-    paver lms
+    paver devstack lms
 
-   Or, to start the LMS without updating requirements and compiling assets, use the ``fast`` option:
+   Or, to start the LMS without updating requirements and compiling assets, use
+   the ``fast`` option:
    
    .. code-block:: bash
 
-    paver lms --fast 
+    paver devstack lms --fast 
 
    The LMS starts. 
 
@@ -120,14 +121,14 @@ To run Studio on Devstack:
    
    .. code-block:: bash
 
-    paver studio
+    paver devstack studio
 
    Or, to start Studio without updating requirements and compiling assets, use
    the ``fast`` option:
    
    .. code-block:: bash
 
-    paver studio --fast 
+    paver devstack studio --fast 
 
    Studio starts. 
 
@@ -135,6 +136,17 @@ To run Studio on Devstack:
  
    Vagrant forwards port 8001 to the Studio server running in the virtual
    machine.
+
+=================================
+View Available Studio Commands
+=================================
+
+To view all available commands for Studio, enter:
+
+.. code-blcok:: bash
+
+  ./manage.py cms -h --settings=devstack
+  
 
 ************************************
 Run Discussion Forums on Devstack
@@ -167,8 +179,10 @@ To run discussion forums on Devstack:
 
     ruby app.rb -p 18080
 
-The discussions forum server starts. You can access the discussion forums API at
-``http://localhost:18080/``.
+The discussions forum server starts. You can access the discussion forums API
+at ``http://localhost:18080/``.
+
+
 
 ************************************
 Default Accounts on Devstack
@@ -183,14 +197,17 @@ When you install Devstack, the following accounts are created:
    * - Account
      - Description
    * - staff@example.com
-     - An LMS and Studio user with course creation and editing permissions. This
-       user is a course staff member with rights to work with the demonstration
-       course in Studio.
+     - An LMS and Studio user with course creation and editing permissions.
+       This user is a course staff member with rights to work with the
+       demonstration course in Studio.
    * - verified@example.com
-     - A student account that you can use to access the LMS for testing verified certificates.
+     - A student account that you can use to access the LMS for testing
+       verified certificates.
    * - audit@example.com
-     - A student account that you can use the access the LMS for testing course auditing.
+     - A student account that you can use the access the LMS for testing course
+       auditing.
    * - honor@example.com
-     - A student account that you can use the access the LMS for testing honor code certificates.
+     - A student account that you can use the access the LMS for testing honor
+       code certificates.
 
 The password for all of these accounts is ``edx``.

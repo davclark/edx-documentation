@@ -59,8 +59,8 @@ To use Devstack, you should:
   `Introduction to the Mac OS X Command Line`_. If you are using a Windows
   computer, see `Windows Command Line Reference`_.
 
-* Understand Vagrant commands. See the `Vagrant Getting Started`_ guide for more
-  information.
+* Understand Vagrant commands. See the `Vagrant Getting Started`_ guide for
+  more information.
 
 
 **************************
@@ -69,9 +69,9 @@ Software Prerequisites
 
 To install and run Devstack, you must first install:
 
-* `VirtualBox`_ 4.3.10 or higher
+* `VirtualBox`_ 4.3.12 or higher
 
-* `Vagrant`_ 1.5.3 or higher
+* `Vagrant`_ 1.6.5 or higher
 
 * An NFS client, if your operating system does not include one. Devstack uses
   VirtualBox Guest Editions to share folders through NFS.
@@ -85,7 +85,8 @@ To install Devstack directly from the command line, follow the instructions
 below. You can also install DevStack using a Torrent file, as explained in the
 next section.
 
-Before beginning the installation, ensure that you have your local computer's administrator's password.
+Before beginning the installation, ensure that you have your local computer's
+administrator's password.
 
 #. Ensure the ``nfsd`` client is running.
 
@@ -114,9 +115,10 @@ Before beginning the installation, ensure that you have your local computer's ad
 
      vagrant up
 
-   The first time you create the Devstack virtual machine, Vagrant downloads the
-   base box, which is about 4GB. If you destroy and recreate the virtual
-   machine, Vagrant re-uses the box it downloaded. See `Vagrant's documentation on boxes`_ for more information.
+   The first time you create the Devstack virtual machine, Vagrant downloads
+   the base box, which is about 4GB. If you destroy and recreate the virtual
+   machine, Vagrant re-uses the box it downloaded. See `Vagrant's documentation
+   on boxes`_ for more information.
 
 #. When prompted, enter your local computer's administrator's password.
    
