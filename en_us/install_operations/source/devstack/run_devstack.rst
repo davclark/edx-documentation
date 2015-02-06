@@ -143,7 +143,7 @@ View Available Studio Commands
 
 To view all available commands for Studio, enter:
 
-.. code-blcok:: bash
+.. code-block:: bash
 
   ./manage.py cms -h --settings=devstack
   

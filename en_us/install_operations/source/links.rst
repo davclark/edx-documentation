@@ -16,3 +16,7 @@
 .. _VirtualBox Guest Editions: http://www.virtualbox.org/manual/ch04.html
 .. _Vagrant documentation: http://docs.vagrantup.com/v2/
 .. _Vagrant's documentation on boxes: http://docs.vagrantup.com/v2/boxes.html
+
+.. _Birch Devstack: https://s3.amazonaws.com/edx-static/vagrant-images/20150203-birch-devstack-rc1.box?torrent
+
+.. _Birch Prodstack: https://s3.amazonaws.com/edx-static/vagrant-images/20150204-birch-fullstack-rc1.box?torrent

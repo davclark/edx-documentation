@@ -12,7 +12,8 @@ for using your own instance of the edX Platform and associated applications.
 
 This document applies to the most recent version of the edX Platform; that is, it applies to the *master* branch of the edX Platform.
 
-This document also contains instructions for named releases of Open edX. The most recent named release of Open edX is :ref:`Birch`.
+This document also contains instructions for named releases of Open edX. The
+most recent named release of Open edX is :ref:`Birch <Open edX Birch Release>`.
 
 .. toctree::
    :numbered:
