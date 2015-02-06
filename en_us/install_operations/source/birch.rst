@@ -20,6 +20,11 @@ What's Included in Birch
 The Open edX Birch release contains several new features for students, course
 staff, and developers.  See the Open edX Release Notes for more details. (LINK)
 
+.. Note:: 
+ There are several new features in the Birch release that are available, but
+ not configured in new installations.  See :ref:`Configuring the edX Platform`
+ for instructions.
+
 ******************************
 What's is the Birch GIT Tag
 ******************************
