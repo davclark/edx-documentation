@@ -10,43 +10,26 @@ In the Open edX Birch release, a new feature allows course staff to set
 prerequisites for a course. Learners must complete the prerequisite courses
 before participating in the course.
 
-To enable this feature on your instance of Open edX, you must enable benable
-prerequisites in Studio and the Learning Management System.
+To use this feature on your instance of Open edX, you must configure the
+Milestones application, then enable prerequisites in Studio and the Learning
+Management System.
 
 For information about prerequisites, see the *Building and Running an
 Open edX Course* and *Open edX Learner's* guides.
 
-To enable prerequisites:
+.. include:: configure_milestone_app.rst
 
-#. In the edX Platform installation directory, edit the file
-   ``/cms/envs/common.py``
 
-#. Set the values of ``MILESTONES_APP`` and ``ENABLE_PREREQUISITE_COURSES`` to
-   ``True``:
+*************************************************************************
+Enable Prerequisite Courses in Studio and the Learning Management System
+*************************************************************************
+
+#. #. Set the value of ``ENABLE_PREREQUISITE_COURSES`` in the
+   ``/cms/envs/common.py`` and ``/lms/envs/common.py`` files to ``True``.
    
    .. code-block:: bash
 
-       # Milestones application flag
-       'MILESTONES_APP': False,
-
        # Prerequisite courses feature flag
-       'ENABLE_PREREQUISITE_COURSES': False,
+       'ENABLE_PREREQUISITE_COURSES': True,
 
-#. Save the ``/cms/envs/common.py`` file.
-   
-#. In the edX Platform installation directory, edit the file
-   ``/lms/envs/common.py``
-
-#. Set the values of ``MILESTONES_APP`` and ``ENABLE_PREREQUISITE_COURSES`` to
-   ``True``:
-   
-   .. code-block:: bash
-
-       # Milestones application flag
-       'MILESTONES_APP': False,
-
-       # Prerequisite courses feature flag
-       'ENABLE_PREREQUISITE_COURSES': False,
-
-#. Save the ``/lms/envs/common.py`` file.
-
+#. Save the the ``/cms/envs/common.py`` and ``/lms/envs/common.py`` files.

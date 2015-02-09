@@ -31,5 +31,6 @@ most recent named release of Open edX is :ref:`Birch <Open edX Birch Release>`.
    configuration/install_google_drive
    configuration/enable_course_search
    configuration/enable_prerequisites
+   configuration/enable_entrance_exams
    analytics/install_analytics
    mobile

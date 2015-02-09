@@ -26,6 +26,8 @@ staff, and developers.  See the Open edX Release Notes for more details. (LINK)
 
  * :ref:`Add the Google Drive and Google Calendar XBlock`.
  * :ref:`Enable Course Search`
+ * :ref:`Enable Course Prerequisites`
+ * :ref:`Enable Entrance Exams`
 
 ******************************
 What's is the Birch GIT Tag
