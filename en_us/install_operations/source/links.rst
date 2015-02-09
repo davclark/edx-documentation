@@ -20,3 +20,5 @@
 .. _Birch Devstack: https://s3.amazonaws.com/edx-static/vagrant-images/20150203-birch-devstack-rc1.box?torrent
 
 .. _Birch Prodstack: https://s3.amazonaws.com/edx-static/vagrant-images/20150204-birch-fullstack-rc1.box?torrent
+
+.. _Google Drive XBlock: https://github.com/edx-solutions/xblock-google-drive

@@ -22,8 +22,10 @@ staff, and developers.  See the Open edX Release Notes for more details. (LINK)
 
 .. Note:: 
  There are several new features in the Birch release that are available, but
- not configured in new installations.  See :ref:`Configuring the edX Platform`
- for instructions.
+ not configured in new installations.  See:
+
+ * :ref:`Add the Google Drive and Google Calendar XBlock`.
+ * :ref:`Enable Course Search`
 
 ******************************
 What's is the Birch GIT Tag
@@ -109,7 +111,7 @@ Install the Vagrant Box
 
 When you have completed the previous steps, install the Birch release by
 following the installation instructions for :ref:`Devstack <Installing the edX
-Developer Stack>` or the :ref:`Production stack<Installing the edX Production
+Developer Stack>` or the :ref:`Production stack <Installing the edX Production
 Stack>`.
 
 
