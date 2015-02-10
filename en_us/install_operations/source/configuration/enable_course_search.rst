@@ -15,6 +15,9 @@ indexed before learners can search course content.
 
 For information about searching courseware, see the *Open edX Learner's* guide.
 
+.. Note::  
+  Before proceeding, review :ref:`Guidelines for Updating the edX Platform`.
+
 *****************************
 Enable Course Indexing
 *****************************

@@ -17,8 +17,11 @@ Management System.
 For information about prerequisites, see the *Building and Running an
 Open edX Course* and *Open edX Learner's* guides.
 
-.. include:: configure_milestone_app.rst
+.. Note::  
+  Before proceeding, review :ref:`Guidelines for Updating the edX Platform`.
 
+
+.. include:: configure_milestone_app.rst
 
 *************************************************************************
 Enable Prerequisite Courses in Studio and the Learning Management System
