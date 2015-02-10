@@ -7,8 +7,9 @@
 Installing, Configuring, and Running the edX Platform
 ######################################################
 
-*Installing, Configuring, and Running the edX Platform* provides instructions
-for using your own instance of the edX Platform and associated applications.
+*Installing, Configuring, and Running the Open edX Platform* provides
+instructions for using your own instance of the edX Platform and associated
+applications.
 
 This document applies to the most recent version of the edX Platform; that is, it applies to the *master* branch of the edX Platform.
 
