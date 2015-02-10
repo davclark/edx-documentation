@@ -28,9 +28,6 @@ most recent named release of Open edX is :ref:`Birch <Open edX Birch Release>`.
    devstack/install_devstack
    devstack/run_devstack
    prodstack/install_prodstack
-   configuration/install_google_drive
-   configuration/enable_course_search
-   configuration/enable_prerequisites
-   configuration/enable_entrance_exams
+   configuration/index
    analytics/install_analytics
    mobile

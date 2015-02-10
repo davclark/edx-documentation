@@ -24,7 +24,7 @@ Open edX Course* and *Open edX Learner's* guides.
 Enable Prerequisite Courses in Studio and the Learning Management System
 *************************************************************************
 
-#. #. Set the value of ``ENABLE_PREREQUISITE_COURSES`` in the
+#. Set the value of ``ENABLE_PREREQUISITE_COURSES`` in the
    ``/cms/envs/common.py`` and ``/lms/envs/common.py`` files to ``True``.
    
    .. code-block:: bash

@@ -1,5 +1,7 @@
 .. include:: ../links.rst
 
+.. for reuse, not in TOC, excluded from build list
+
 ************************************
 Configure the Milestones Application
 ************************************
