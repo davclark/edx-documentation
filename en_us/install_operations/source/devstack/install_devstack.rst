@@ -1,12 +1,13 @@
 .. include:: ../links.rst
 
-.. _Installing the edX Developer Stack:
+.. _Installing the Open edX Developer Stack:
 
-####################################
-Installing the edX Developer Stack
-####################################
+########################################
+Installing the Open edX Developer Stack
+########################################
 
-This chapter is intended for those who are installing and running the edX Developer Stack.
+This chapter is intended for those who are installing and running the Open edX
+Developer Stack.
 
 See the following sections:
 
@@ -22,13 +23,14 @@ See the following sections:
 Overview
 **********
 
-The edX Developer Stack, known as **Devstack**, is a Vagrant instance designed
-for local development.
+The Open edX Developer Stack, known as **Devstack**, is a Vagrant instance
+designed for local development.
 
 Devstack:
 
-* Uses the same system requirements as production. This allows you to
-  discover and fix system configuration issues early in development.
+* Uses the same system requirements as :ref:`Open edX Fullstack <Installing
+  Open edX Fullstack>`. This allows you to discover and fix system
+  configuration issues early in development.
 
 * Simplifies certain production settings to make development more convenient.
   For example, `nginx`_ and `gunicorn`_ are disabled in Devstack; Devstack uses
@@ -125,8 +127,8 @@ administrator's password.
    Your password is needed so that NFS can be set up to allow users to access
    code directories directly from your computer.
 
-When you have completed these steps, see :ref:`Running the edX Developer Stack`
-to begin using Devstack.
+When you have completed these steps, see :ref:`Running the Open edX Developer
+Stack` to begin using Devstack.
 
 
 *****************************************

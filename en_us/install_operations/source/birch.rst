@@ -25,15 +25,14 @@ staff, and developers.  See the Open edX Release Notes for more details. (LINK)
  not configured in new installations.  See:
 
  * :ref:`Add the Google Drive and Google Calendar XBlock`.
- * :ref:`Enable Course Search`
  * :ref:`Enable Course Prerequisites`
  * :ref:`Enable Entrance Exams`
 
 ******************************
-What's is the Birch GIT Tag
+What's is the Birch Git Tag
 ******************************
 
-The GIT tag for the Birch release is **named-release/birch.rc1**.
+The Git tag for the Birch release is **named-release/birch.rc1**.
 
 .. confirm
 
@@ -41,9 +40,8 @@ The GIT tag for the Birch release is **named-release/birch.rc1**.
 Installing the Birch Release
 ******************************
 
-You can install the Birch release with :ref:`Devstack <Installing the edX
-Developer Stack>` or the :ref:`Production stack<Installing the edX Production
-Stack>`. 
+You can install the Open edX Birch release with :ref:`Devstack <Installing the
+Open edX Developer Stack>` or :ref:`Fullstack<Installing Open edX Fullstack>`.
 
 Review those instructions for each option, then choose the option that best
 meets your needs. Ensure you install the required software to run run the edX
@@ -68,7 +66,7 @@ intend to install the edX Platform.
 Download the Vagrant box for the option you selected:
 
 * `Devstack <Birch Devstack>`_
-* `Production stack <Birch Prodstack>`_
+* `Fullstack <Birch Fullstack>`_
 
 See `Vagrant's documentation on boxes`_ for more information.
 
@@ -85,7 +83,7 @@ You must add the box to Vagrant:
      $ vagrant box add /path-to-downloaded-box/vagrant-images-20150203-birch-
      devstack.box.torrent --name birch-devstack-rc1
 
-* For Production stack installations, enter:
+* For Fullstack stack installations, enter:
 
    .. code-block:: bash
 
@@ -112,14 +110,35 @@ Install the Vagrant Box
 =========================
 
 When you have completed the previous steps, install the Birch release by
-following the installation instructions for :ref:`Devstack <Installing the edX
-Developer Stack>` or the :ref:`Production stack <Installing the edX Production
-Stack>`.
+following the installation instructions for :ref:`Devstack <Installing the Open
+edX Developer Stack>` or the :ref:`Fullstack <Installing Open edX Fullstack>`.
 
 
 ******************************
 Upgrading from Aspen to Birch
 ******************************
 
-TBP
+You can upgrade your Open edX instance that is running the Aspen release to the
+Birch release.
 
+.. note::  
+  The upgrade scripts provided are verified only for upgrading instances
+  running the Aspen release. If you are running any other version of the Open
+  edX Platform, edX does not guarantee that the upgrade scripts will work.
+
+.. caution:: 
+  Before upgrading your Open edX instance, back up all data and configuration
+  files.
+
+On the computer or virtual machine running the Aspen release of Open edX, run
+the upgrade script for your type of installation:
+
+* For Devstack, run the ``migrate-devstack.sh`` script.
+
+* For Fullstack, run the ``migrate-fullstack.sh`` script.
+  
+The script creates a temporary directory in which it upgrades Open edX, then
+cleans up extra files and directories when it completes.
+
+After upgrading Open edX to the Birch release, run the edX Platform and verify
+that the upgrade script worked correctly.

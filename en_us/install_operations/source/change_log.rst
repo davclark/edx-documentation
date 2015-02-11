@@ -13,8 +13,9 @@ Change Log
    * - 01/14/2015
      - Addition of the section :ref:`Setting up the Mobile Applications`
    * - 06/07/2014
-     - Addition of the section :ref:`Installing the edX Production Stack`
+     - Addition of the section :ref:`Installing Open edX Fullstack`
    * - 05/21/2014
-     - The initial release of this guide, with the sections :ref:`Installing the
-       edX Developer Stack` and :ref:`Running the edX Developer Stack`.
+     - The initial release of this guide, with the sections :ref:`Installing
+       the Open edX Developer Stack` and :ref:`Running the Open edX Developer
+       Stack`.
    

@@ -1,9 +1,9 @@
 .. include:: ../links.rst
 
-.. _Running the edX Developer Stack:
+.. _Running the Open edX Developer Stack:
 
 ####################################
-Running the edX Developer Stack
+Running the Open edX Developer Stack
 ####################################
 
 See the following sections:

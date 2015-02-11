@@ -12,6 +12,5 @@ options.
 
    updating_platform
    install_google_drive
-   enable_course_search
    enable_prerequisites
    enable_entrance_exams

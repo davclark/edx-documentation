@@ -1,13 +1,13 @@
 .. include:: ../links.rst
 
-.. _Installing the edX Production Stack:
+.. _Installing Open edX Fullstack:
 
 ####################################
-Installing the edX Production Stack
+Installing Open edX Fullstack
 ####################################
 
-This chapter is intended for those who are installing and running the edX
-Production Stack.
+This chapter is intended for those who are installing and running Open edX
+Fullstack.
 
 See the following sections:
 
@@ -15,15 +15,15 @@ See the following sections:
 * `Components`_
 * `Knowledge Prerequisites`_
 * `Software Prerequisites`_
-* `Install the edX Production Stack`_
+* `Install Open edX Fullstack`_
 
 
 **********
 Overview
 **********
 
-The edX Production Stack, known as **Fullstack**, is a Vagrant instance
-designed for deploying all edX services on a single server.
+Open edX Fullstack, is a Vagrant instance designed for deploying all Open edX
+services on a single server.
 
 See the `Vagrant documentation`_ for more information.
 
@@ -32,7 +32,7 @@ See the `Vagrant documentation`_ for more information.
 Components
 ********************
 
-Fullstack includes the following edX components:
+Open edX Fullstack includes the following edX components:
 
 * The Learning Management System (LMS)
 * edX Studio
@@ -48,7 +48,7 @@ Fullstack includes the following edX components:
 Knowledge Prerequisites
 **************************
 
-To use Fullstack, you should:
+To use Open edX Fullstack, you should:
 
 * Understand basic terminal usage. If you are using a Mac computer, see
   `Introduction to the Mac OS X Command Line`_. If you are using a Windows
@@ -62,22 +62,22 @@ To use Fullstack, you should:
 Software Prerequisites
 **************************
 
-To install and run Fullstack, you must first install:
+To install and run Open edX Fullstack, you must first install:
 
 * `VirtualBox`_ 4.3.10 or higher
 
 * `Vagrant`_ 1.5.3 or higher
 
-* An NFS client, if your operating system does not include one. Fullstack uses
-  `VirtualBox Guest Editions`_ to share folders through NFS.
+* An NFS client, if your operating system does not include one. Open edX
+  Fullstack uses `VirtualBox Guest Editions`_ to share folders through NFS.
   
 
 *********************************
-Install the edX Production Stack
+Install Open edX Fullstack
 *********************************
 
-To install Fullstack directly from the command line, follow the instructions
-below.
+To install Open edX Fullstack directly from the command line, follow the
+instructions below.
 
 Before beginning the installation, ensure that you have your local computer's
 administrator's password.
@@ -121,7 +121,7 @@ administrator's password.
    code directories directly from your computer.
 
 **********************************************
-Browser Login To Your New edX Production Stack
+Browser Login to Open edX Fullstack
 **********************************************
 
 #. Go to preview.localhost in your browser, which is an alias entry for
