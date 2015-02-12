@@ -4,7 +4,7 @@
 Open edX Platform Installation Options
 ########################################
 
-You can install the Open edX Platform in one of the following three ways.
+.. contents:: Chapter Contents:
 
 ***************************
 Open edX Developer Stack

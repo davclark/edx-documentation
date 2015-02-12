@@ -11,14 +11,8 @@ and its dependencies in a production environment. Work to prepare complete
 installation procedures for edX Insights is in progress. Introductory material
 is available now.
 
-See the following sections:
+.. contents:: Chapter Contents:
 
-* `Overview`_
-* `What You Should Know Before You Start`_
-* `Planning Your Deployment`_
-* `Example Deployments`_
-
-.. _edX Insights: http://edx.readthedocs.org/projects/edx-insights/en/latest/index.html
 
 ********
 Overview

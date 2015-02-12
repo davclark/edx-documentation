@@ -6,15 +6,7 @@
 Running the Open edX Developer Stack
 ####################################
 
-See the following sections:
-
-* `Connect to the Devstack Virtual Machine`_
-* `Set Up Ability to Preview Units (Mac/Linux Only)`_
-* `Customize the Source Code Location`_
-* `Run the LMS on Devstack`_
-* `Run Studio on Devstack`_
-* `Run Discussion Forums on Devstack`_
-* `Default Accounts on Devstack`_
+.. contents:: Chapter Contents:
 
 
 ****************************************

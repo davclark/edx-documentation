@@ -9,13 +9,7 @@ Installing Open edX Fullstack
 This chapter is intended for those who are installing and running Open edX
 Fullstack.
 
-See the following sections:
-
-* `Overview`_
-* `Components`_
-* `Knowledge Prerequisites`_
-* `Software Prerequisites`_
-* `Install Open edX Fullstack`_
+.. contents:: Chapter Contents:
 
 
 **********
@@ -64,9 +58,9 @@ Software Prerequisites
 
 To install and run Open edX Fullstack, you must first install:
 
-* `VirtualBox`_ 4.3.10 or higher
+* `VirtualBox`_ 4.3.12 or higher
 
-* `Vagrant`_ 1.5.3 or higher
+* `Vagrant`_ 1.6.5 or higher
 
 * An NFS client, if your operating system does not include one. Open edX
   Fullstack uses `VirtualBox Guest Editions`_ to share folders through NFS.
@@ -95,8 +89,7 @@ administrator's password.
    
    .. code-block:: bash
 
-     curl -L https://raw.githubusercontent.com/edx/configuration/master/vagrant
-     /release/fullstack/Vagrantfile > Vagrantfile
+     curl -L https://raw.githubusercontent.com/edx/configuration/master/vagrant/release/fullstack/Vagrantfile > Vagrantfile
 
 #. Install the Vagrant hostsupdater plugin.
    

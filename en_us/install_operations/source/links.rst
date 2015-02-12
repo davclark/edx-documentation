@@ -15,10 +15,19 @@
 .. _Ease: https://github.com/edx/ease
 .. _VirtualBox Guest Editions: http://www.virtualbox.org/manual/ch04.html
 .. _Vagrant documentation: http://docs.vagrantup.com/v2/
+
 .. _Vagrant's documentation on boxes: http://docs.vagrantup.com/v2/boxes.html
 
-.. _Birch Devstack: https://s3.amazonaws.com/edx-static/vagrant-images/20150203-birch-devstack-rc1.box?torrent
+.. _Birch Devstack: https://s3.amazonaws.com/edx-static/vagrant-images/20150211-birch-devstack-rc2.box
 
-.. _Birch Prodstack: https://s3.amazonaws.com/edx-static/vagrant-images/20150204-birch-fullstack-rc1.box?torrent
+.. _Birch Fullstack: https://s3.amazonaws.com/edx-static/vagrant-images/20150211-birch-fullstack-rc2.box
+
+.. _Birch Devstack BitTorrent: https://s3.amazonaws.com/edx-static/vagrant-images/20150211-birch-devstack-rc2.box?torrent
+
+.. _Birch Fullstack BitTorrent: https://s3.amazonaws.com/edx-static/vagrant-images/20150211-birch-fullstack-rc2.box?torrent
 
 .. _Google Drive XBlock: https://github.com/edx-solutions/xblock-google-drive
+
+.. _BitTorrent:  http://www.bittorrent.com/
+
+.. _edX Insights: http://edx.readthedocs.org/projects/edx-insights/en/latest/index.html

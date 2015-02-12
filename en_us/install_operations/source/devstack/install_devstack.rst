@@ -9,14 +9,7 @@ Installing the Open edX Developer Stack
 This chapter is intended for those who are installing and running the Open edX
 Developer Stack.
 
-See the following sections:
-
-* `Overview`_
-* `Components`_
-* `Knowledge Prerequisites`_
-* `Software Prerequisites`_
-* `Install DevStack`_
-* `Install DevStack using the Torrent file`_
+.. contents:: Chapter Contents:
 
 
 **********
