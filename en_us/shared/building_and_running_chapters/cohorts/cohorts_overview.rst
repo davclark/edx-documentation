@@ -203,25 +203,22 @@ Strategy` and :ref:`Implementing the Manual Assignment Strategy`.
 Ensuring That All Students Are Assigned: The Default Cohort
 ===========================================================
 
-In a course that has the cohort feature enabled, all students must be assigned
-to a cohort. To ensure that all students are assigned, the system automatically
-creates a default cohort and assigns students to it if necessary. Creation of
-the default cohort only occurs if you do not define any automated cohorts for
-your course. Any student who is not assigned to a manual cohort is assigned to
-the default cohort automatically when they visit the **Discussion** page or a
-discussion topic in the course content.
+If you enable cohorts in your course, all students must be assigned to a cohort.
+To ensure that there are no students in the course without a cohort, the system
+automatically creates a default cohort and assigns students to it if necessary.
+The default cohort is created only if you have not created any automated cohorts
+in your course. Any student who is not assigned to a manual cohort is
+automatically assigned to the default cohort when they visit the **Discussion**
+page or a discussion topic in the course content.
 
 Students who are assigned to the default cohort see a cohort name of "Default
-Group" in discussion posts.
+Group" in discussion posts. If you want students to see a different name for the
+default cohort, you can change its name. For details about renaming cohorts, see
+:ref:`Renaming a Cohort`.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/post_visible_default.png
  :alt: A discussion topic post with "This post is visible to Default Group" 
        above the title
-
-If you want students to see a different cohort name when your course starts, you
-can add an automated cohort with the name that you prefer. See :ref:`Define Auto
-Cohorts`. (Adding an automated cohort to your course for this purpose is not
-recommended after your course starts.)
 
 You can check the :ref:`student profile information report<View and download
 student data>` for your course to see if any students are assigned to the

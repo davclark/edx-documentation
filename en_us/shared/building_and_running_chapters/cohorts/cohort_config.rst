@@ -447,7 +447,8 @@ Dashboard.
 Rename a Cohort
 ===============
 
-.. any limitations? Can the Default Cohort be renamed?
+You can change the name of any cohort, including the system-created default
+cohort.
 
 To rename a cohort, follow these steps.
 
