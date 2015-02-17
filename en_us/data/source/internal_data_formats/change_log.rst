@@ -14,6 +14,9 @@ January-March 2015
 
    * - Date
      - Change
+   * - 19 Feb 2015
+     - Added events for the display of :ref:`Google components<content>` to the
+       Tracking Logs chapter.
    * - 13 Feb 2015
      - Added the ``edx.course.enrollment.mode_changed`` event to the
        :ref:`Tracking Logs` chapter.

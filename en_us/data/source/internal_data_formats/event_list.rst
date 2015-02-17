@@ -64,6 +64,10 @@ Alphabetical Event List
      - :ref:`enrollment`
    * - ``edx.forum.searched``
      - :ref:`forum_events`
+   * - ``edx.googlecomponent.calendar.displayed``
+     - :ref:`content`
+   * - ``edx.googlecomponent.document.displayed``
+     - :ref:`content`
    * - ``edx.video.loaded``
      - :ref:`video`, see ``load_video``
    * - ``edx.video.paused``
